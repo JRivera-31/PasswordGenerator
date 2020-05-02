@@ -17,7 +17,7 @@ var characters = {
   numbers: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
   specialChars: ["~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+", ":", "<", ">", "?"]
 }
-// To store confirmed array(s)
+// To store selected array(s)
 var groupArr = [];
   
 // Create a function to generate the password
@@ -63,16 +63,21 @@ function generatePassword() {
     var selectedCharArr;
     var randomNumber;
     var randomChar;
-
-      randomNumArr = Math.floor(Math.random()*groupArr.length); // Gets random num based on length of group array
-
-      selectedCharArr = groupArr[randomNumArr]; // Stores selected array number
-
-      randomNumber = Math.floor(Math.random()*selectedCharArr.length); // Stores random number based on array length
-
-      randomChar = selectedCharArr[randomNumber]; // Stores random character
-
-      generatedPassword += randomChar; // Accumulate characters
+      
+    // Stores random number based on length of group array
+      randomNumArr = Math.floor(Math.random()*groupArr.length); 
+    
+      // Stores selected array number
+      selectedCharArr = groupArr[randomNumArr]; 
+      
+      // Stores random number based on array length
+      randomNumber = Math.floor(Math.random()*selectedCharArr.length); 
+      
+      // Stores random character
+      randomChar = selectedCharArr[randomNumber]; 
+      
+      // Accumulate characters
+      generatedPassword += randomChar; 
   } 
 
 // Store the generated password
