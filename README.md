@@ -1,8 +1,8 @@
 # 03 JavaScript: Password Generator
 
-When the "Generate password" button is clicked then.
+When the "Generate password" button is clicked
 
-The user is prompted to choose the length of the password between 1-128 characters.
+The user is prompted to choose the length of the password between 8-128 characters.
 
 Then the user is prompted to choose if they want lowercase, uppercase, numeric, or special characters.
 
